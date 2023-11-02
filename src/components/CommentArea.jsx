@@ -5,7 +5,7 @@ import Loading from './Loading'
 import Error from './Error'
 import { useEffect, useState } from 'react'
 
-function CommentArea(asin){
+const CommentArea=(asin)=>{
   // state = {
   //   comments: [],
   //   isLoading: false,

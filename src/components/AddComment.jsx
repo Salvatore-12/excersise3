@@ -2,16 +2,16 @@
 import { useEffect, useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 
-function AddComment({asin}) {
+const AddComment=({asin})=> {
  
 const[comments,setComment]=useState({
 comments:"",
 rate: 1,
 elementId:asin,
 })
-useEffect(()=>{setComment((prevProps)=>({
-  ...prevProps,
-  element:asin}));},[asin])
+useEffect(()=>{setComment((prevProps)=>(
+  {...prevProps,
+    element:asin}));},[asin])
 
   // componentDidUpdate(prevProps) {
   //   if (prevProps.asin !== this.props.asin) {
